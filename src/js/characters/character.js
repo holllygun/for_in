@@ -48,7 +48,7 @@ export default class Character {
         const sortedProps = [];
 
         for(const prop of props){
-            if (this.hasOwnProperty(prop)) {
+            if (Object.prototype.hasOwnProperty.call(this, prop)) {
                 sortedProps.push({key: prop, value: this[prop]});
             }
             else {
@@ -67,4 +67,4 @@ export default class Character {
         return(sortedProps)
     }
 
-};
+}

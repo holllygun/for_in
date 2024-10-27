@@ -36,6 +36,8 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.18.0",
+    "@eslint/object-schema": "^2.1.4",
     "core-js": "^3.38.1"
   }
 }
